@@ -9,9 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -65,10 +68,43 @@
     </nav>
 
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12">
-                <h3>Menu</h3>
-                <h3>under heavy construction</h3>
+        <div class="row">
+            <div class="paymentCont m-auto">
+                <div class="headingWrap">
+                    <h3 class="headingTop text-center">Select Your Payment Method</h3>
+                    <p class="text-center">Created with bootsrap button and using radio button</p>
+                </div>
+                <div class="paymentWrap">
+                    <div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+                        <label class="btn paymentMethod active">
+                            <div class="method visa"></div>
+                            <input type="radio" name="options" checked>
+                        </label>
+                        <label class="btn paymentMethod">
+                            <div class="method master-card"></div>
+                            <input type="radio" name="options">
+                        </label>
+                        <label class="btn paymentMethod">
+                            <div class="method amex"></div>
+                            <input type="radio" name="options">
+                        </label>
+                        <label class="btn paymentMethod">
+                            <div class="method vishwa"></div>
+                            <input type="radio" name="options">
+                        </label>
+                        <label class="btn paymentMethod">
+                            <div class="method ez-cash"></div>
+                            <input type="radio" name="options">
+                        </label>
+
+                    </div>
+                </div>
+                <div class="footerNavWrap clearfix">
+                    <div class="btn btn-success pull-left btn-fyi"><span
+                            class="glyphicon glyphicon-chevron-left"></span> CONTINUE SHOPPING</div>
+                    <div class="btn btn-success pull-right btn-fyi">CHECKOUT<span
+                            class="glyphicon glyphicon-chevron-right"></span></div>
+                </div>
             </div>
         </div>
     </div>
@@ -123,11 +159,13 @@
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
